@@ -1,0 +1,14 @@
+a.out -image Provided/sunflowers.ppm -debug
+
+a.out -image Provided/sunflowers.ppm
+
+a.out -image Provided/sunflowers.ppm -dimensions 100 100 -target 10000
+
+a.out -image Provided/cats.ppm -dimensions 100 100 -target 10000
+
+a.out -image Provided/sunflowers.ppm -preserve_area -dimensions 100 100 -target 10000
+
+a.out -image Provided/sunflowers.ppm -priority_queue -dimensions 100 100 -target 10000
+
+a.out -image Provided/sunflowers.ppm -preserve_area -priority_queue -dimensions 100 100 -target 10000
+

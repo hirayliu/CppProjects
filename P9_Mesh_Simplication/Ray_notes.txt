@@ -1,0 +1,8 @@
+Your second major task for this assignment is to modify the code to add a priority queue to the Mesh representation. This priority queue will store all edges in the mesh, organized by priority for collapse. When the -shortest option is chosen the priority value is simply the edge length – except edges with illegal status are assigned a very large number to ensure they fall to the bottom of the heap.
+
+The use of a priority queue for this problem is somewhat tricky because the length and/or legal/illegal status of an edge will change as the algorithm progresses. Therefore, we cannot use the STL Priority Queue and we instead need a custom PriorityQueue implementation that allows fast access to elements in the middle of the heap. 
+- In the presentation of the priority queue, besides std::vector<T> m_heap, we have std::map<T,int> locations to be able to locate an element in the middle of the heap. 
+- The priority queue also has an update_position(T element) member to reposition the element in the heap when the edge's lenghth or legal/illegal status changes. To do that, we locate the element in the heap (looking up the map), and then we percolate it up and percolate it down. 
+- The priority queue also has a public method to remove an element in the middle of the heap. 
+
+

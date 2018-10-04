@@ -1,0 +1,9 @@
+a.out -method simple -seed 10 images/marbles.pgm images/marbles_1.pgm images/marbles_2.pgm images/marbles_3.pgm
+
+a.out -method hashtable -seed 10 -table 1000000 -compare 0.02 images/marbles.pgm images/marbles_1.pgm images/marbles_2.pgm images/marbles_3.pgm
+
+a.out -method hashtable -seed 5 -table 100000 -compare 0.05 images/noisy_marbles.pgm images/noisy_marbles_1.pgm images/noisy_marbles_2.pgm images/noisy_marbles_3.pgm
+
+a.out -method hashtable -seed 7 -table 100000 -compare 0.05 images/data_structures.pgm images/marbles_1.pgm images/marbles_2.pgm images/marbles_3.pgm
+
+a.out -method hashtable -seed 10 -table 1000000 -compare 0.01 sunflowers.pgm sunflowers_1.pgm sunflowers_2.pgm sunflowers_3.pgm sunflowers_4.pgm sunflowers_5.pgm sunflowers_6.pgm sunflowers_7.pgm sunflowers_8.pgm sunflowers_9.pgm sunflowers_10.pgm sunflowers_11.pgm sunflowers_12.pgm sunflowers_13.pgm sunflowers_14.pgm sunflowers_15.pgm sunflowers_16.pgm sunflowers_17.pgm sunflowers_18.pgm sunflowers_19.pgm sunflowers_20.pgm sunflowers_21.pgm sunflowers_22.pgm sunflowers_23.pgm sunflowers_24.pgm sunflowers_25.pgm
